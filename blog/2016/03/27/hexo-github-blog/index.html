@@ -64,12 +64,12 @@
 安装 Gitgit 主要用于提交静态代码到 github ，mac 装了 xcode 就会自带 git 的。到 github 官网申请 git 帐号，主要用作博客的远程仓库、服务器。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo + github 搭建属于自己的博客">
-<meta property="og:url" content="http://yoursite.com/2016/03/27/hexo-github-blog/index.html">
+<meta property="og:url" content="http://www.wjchan.com/blog/2016/03/27/hexo-github-blog/index.html">
 <meta property="og:site_name" content="wjchan">
 <meta property="og:description" content="一直想维护一个博客，纪录下些什么，主要是做笔记吧。今天找了些时间搭了起来。总体还是很顺利的。以下是在 mac 环境下的操作。
 配置环境安装 Node.js到 Node.js 官网下载相应平台的最新版本，一路安装即可。
 安装 Gitgit 主要用于提交静态代码到 github ，mac 装了 xcode 就会自带 git 的。到 github 官网申请 git 帐号，主要用作博客的远程仓库、服务器。">
-<meta property="og:updated_time" content="2016-03-27T15:09:21.000Z">
+<meta property="og:updated_time" content="2016-03-27T15:58:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + github 搭建属于自己的博客">
 <meta name="twitter:description" content="一直想维护一个博客，纪录下些什么，主要是做笔记吧。今天找了些时间搭了起来。总体还是很顺利的。以下是在 mac 环境下的操作。
@@ -310,8 +310,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/27/hexo-github-blog/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/27/hexo-github-blog/" itemprop="commentsCount"></span>
+                <a href="/blog/2016/03/27/hexo-github-blog/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="/blog/2016/03/27/hexo-github-blog/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -337,11 +337,11 @@
 <h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><h3 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h3><p>到 <a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a> 官网下载相应平台的最新版本，一路安装即可。</p>
 <h3 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h3><p>git 主要用于提交静态代码到 github ，mac 装了 xcode 就会自带 git 的。<br>到 <a href="https://github.com" target="_blank" rel="external">github</a> 官网申请 git 帐号，主要用作博客的远程仓库、服务器。</p>
 <h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>hexo 的安装最初跟着 <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">hexo</a> 官方文档安装遇到了不少问题，最初用</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
 <p>运行时产生大量 ERR ，mac 下用</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g -unsafe-perm hexo</span><br></pre></td></tr></table></figure>
 <p>正常安装。</p>
-<h3 id="hexo-插件"><a href="#hexo-插件" class="headerlink" title="hexo 插件"></a>hexo 插件</h3><p>自动生成sitemap,Rss，部署到git等，建议安装。</p>
+<h3 id="hexo-插件"><a href="#hexo-插件" class="headerlink" title="hexo 插件"></a>hexo 插件</h3><p>自动生成 sitemap，RSS，部署到 git 等，建议安装。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-archive --save</span><br><span class="line">npm install hexo-generator-category --save</span><br><span class="line">npm install hexo-generator-tag --save</span><br><span class="line">npm install hexo-server --save</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install hexo-deployer-heroku --save</span><br><span class="line">npm install hexo-deployer-rsync --save</span><br><span class="line">npm install hexo-deployer-openshift --save</span><br><span class="line">npm install hexo-renderer-marked@0.2 --save</span><br><span class="line">npm install hexo-renderer-stylus@0.2 --save</span><br><span class="line">npm install hexo-generator-feed@1 --save</span><br><span class="line">npm install hexo-generator-sitemap@1 --save</span><br></pre></td></tr></table></figure>
 <h3 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
 <p>新建完成后，指定文件夹的目录如下：</p>
@@ -354,7 +354,7 @@
 <h3 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
 <p>在博客工程根目录下执行，会生成静态文件 public 目录下。也可用完整命令 hexo generate</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-<p>执行后，浏览器输入<a href="http://localhost:4000，简单版的博客出现了。完整版命令" target="_blank" rel="external">http://localhost:4000，简单版的博客出现了。完整版命令</a> hexo server，也可加调试参数 –debug。</p>
+<p>执行后，浏览器输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> ，简单版的博客出现了。完整版命令 hexo server，也可加调试参数 –debug。</p>
 <h2 id="配置-Github"><a href="#配置-Github" class="headerlink" title="配置 Github"></a>配置 Github</h2><h3 id="建立-Repository"><a href="#建立-Repository" class="headerlink" title="建立 Repository"></a>建立 Repository</h3><p>建立与你 github 用户名对应的仓库，仓库名必须为 your_user_name.github.io，固定写法，然后建立关联。如果不是这样，在浏览器用your_user_name.github.io将无法访问博客。<br>修改根目录下的工程配置文件_config.yml，在文件最后找到 deploy，修改为</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> <span class="built_in">type</span>: git </span><br><span class="line"> repository: https://github.com/your_user_name/your_user_name.github.io.git  </span><br><span class="line"> branch: master</span><br></pre></td></tr></table></figure>
 <h3 id="发布代码"><a href="#发布代码" class="headerlink" title="发布代码"></a>发布代码</h3><p>回到终端，在博客根目录执行</p>
@@ -372,12 +372,13 @@
 <h3 id="添加标签tags页面"><a href="#添加标签tags页面" class="headerlink" title="添加标签tags页面"></a>添加标签tags页面</h3><p>定位到 Hexo 站点目录下，使用 hexo new page 新建一个页面，命名为 tags，布局格式为page：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
 <p>内容如下所示，如果要关闭tags页面的评论可以设置comments为false：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: 标签</span><br><span class="line">date: 2016-03-27 23:39:04</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"tags"</span></span><br><span class="line">comments: <span class="literal">false</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: 标签</span><br><span class="line">date: 2016-03-27 23:39:11</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"tags"</span></span><br><span class="line">comments: <span class="literal">false</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <h3 id="添加分类页面"><a href="#添加分类页面" class="headerlink" title="添加分类页面"></a>添加分类页面</h3><p>和上面的一样，在hexo目录下执行下面命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
 <p>内容为：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: 分类</span><br><span class="line">date: 2016-03-27 23:39:04</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"categories"</span></span><br><span class="line">comments: <span class="literal">false</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<h3 id="添加404页面"><a href="#添加404页面" class="headerlink" title="添加404页面"></a>添加404页面</h3><p>新建一个404.html文件，放到themes\next\source目录下，内容自己定。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: 分类</span><br><span class="line">date: 2016-03-27 23:39:12</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"categories"</span></span><br><span class="line">comments: <span class="literal">false</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h3 id="添加腾讯公益"><a href="#添加腾讯公益" class="headerlink" title="添加腾讯公益"></a>添加腾讯公益</h3><p>新建一个404.html文件，放到themes\next\source目录下，内容如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"content-type"</span> <span class="attr">content</span>=<span class="string">"text/html;charset=utf-8;"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge,chrome=1"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"all"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"index,follow"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"http://www.qq.com/404/search_children.js"</span></span><br><span class="line">        <span class="attr">charset</span>=<span class="string">"utf-8"</span> <span class="attr">homePageUrl</span>=<span class="string">"your site url "</span></span><br><span class="line">        <span class="attr">homePageName</span>=<span class="string">"回到我的主页"</span>&gt;</span><span class="undefined"></span><br><span class="line"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h2 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h2><p>首先要备案好个人域名，像万网或者 DNSPod 都可以。通过 ping your_user_name.github.io 获得服务器的 ip ，回到万网上添加 @ 和 www 两条 A 解析，ip 都是刚刚ping到的ip。</p>
 <p>回到 github，在仓库根目录新建文件命名为 CNAME，内容是wjchan.com，当然，域名要改成自己的。浏览器输入 www.wjchan.com，访问成功。</p>
 
@@ -407,7 +408,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/03/27/utility-function/" rel="prev" title="博客添加实用功能">
+              <a href="/blog/2016/03/27/utility-function/" rel="prev" title="博客添加实用功能">
                 博客添加实用功能 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -424,6 +425,29 @@
 
     <div class="post-spread">
       
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
     </div>
   </div>
 
@@ -438,8 +462,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/27/hexo-github-blog/"
-           data-title="Hexo + github 搭建属于自己的博客" data-url="http://yoursite.com/2016/03/27/hexo-github-blog/">
+      <div class="ds-thread" data-thread-key="/blog/2016/03/27/hexo-github-blog/"
+           data-title="Hexo + github 搭建属于自己的博客" data-url="http://www.wjchan.com/blog/2016/03/27/hexo-github-blog/">
       </div>
     
   </div>
@@ -560,7 +584,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置环境"><span class="nav-number">1.</span> <span class="nav-text">配置环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Git"><span class="nav-number">1.2.</span> <span class="nav-text">安装 Git</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo"><span class="nav-number">2.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-插件"><span class="nav-number">2.2.</span> <span class="nav-text">hexo 插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建站"><span class="nav-number">2.3.</span> <span class="nav-text">建站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动本地服务器"><span class="nav-number">2.4.</span> <span class="nav-text">启动本地服务器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Github"><span class="nav-number">3.</span> <span class="nav-text">配置 Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#建立-Repository"><span class="nav-number">3.1.</span> <span class="nav-text">建立 Repository</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布代码"><span class="nav-number">3.2.</span> <span class="nav-text">发布代码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题"><span class="nav-number">4.</span> <span class="nav-text">主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载主题"><span class="nav-number">4.1.</span> <span class="nav-text">下载主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用主题"><span class="nav-number">4.2.</span> <span class="nav-text">启用主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置RSS"><span class="nav-number">4.3.</span> <span class="nav-text">设置RSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加标签tags页面"><span class="nav-number">4.4.</span> <span class="nav-text">添加标签tags页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加分类页面"><span class="nav-number">4.5.</span> <span class="nav-text">添加分类页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加404页面"><span class="nav-number">4.6.</span> <span class="nav-text">添加404页面</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#域名绑定"><span class="nav-number">5.</span> <span class="nav-text">域名绑定</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置环境"><span class="nav-number">1.</span> <span class="nav-text">配置环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Git"><span class="nav-number">1.2.</span> <span class="nav-text">安装 Git</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo"><span class="nav-number">2.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-插件"><span class="nav-number">2.2.</span> <span class="nav-text">hexo 插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建站"><span class="nav-number">2.3.</span> <span class="nav-text">建站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动本地服务器"><span class="nav-number">2.4.</span> <span class="nav-text">启动本地服务器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Github"><span class="nav-number">3.</span> <span class="nav-text">配置 Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#建立-Repository"><span class="nav-number">3.1.</span> <span class="nav-text">建立 Repository</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布代码"><span class="nav-number">3.2.</span> <span class="nav-text">发布代码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题"><span class="nav-number">4.</span> <span class="nav-text">主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载主题"><span class="nav-number">4.1.</span> <span class="nav-text">下载主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用主题"><span class="nav-number">4.2.</span> <span class="nav-text">启用主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置RSS"><span class="nav-number">4.3.</span> <span class="nav-text">设置RSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加标签tags页面"><span class="nav-number">4.4.</span> <span class="nav-text">添加标签tags页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加分类页面"><span class="nav-number">4.5.</span> <span class="nav-text">添加分类页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加腾讯公益"><span class="nav-number">4.6.</span> <span class="nav-text">添加腾讯公益</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#域名绑定"><span class="nav-number">5.</span> <span class="nav-text">域名绑定</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
@@ -581,7 +605,7 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy;  2015 - 
+  &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>

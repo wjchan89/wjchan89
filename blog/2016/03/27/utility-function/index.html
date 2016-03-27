@@ -64,12 +64,12 @@
 百度统计登录百度统计，转到获取代码截面，找到百度统计脚本id，然后把themes\next_config.y">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博客添加实用功能">
-<meta property="og:url" content="http://yoursite.com/2016/03/27/utility-function/index.html">
+<meta property="og:url" content="http://www.wjchan.com/blog/2016/03/27/utility-function/index.html">
 <meta property="og:site_name" content="wjchan">
 <meta property="og:description" content="多说评论登录多说官网，登录后点我要安装，然后填写站点相关信息，最主要的是duoshuo_shortname这个字段，设置后之后修改themes\next_config.yml文件，把duoshuo_shortname改成你的，如下所示：
 1duoshuo_shortname: wjchan
 百度统计登录百度统计，转到获取代码截面，找到百度统计脚本id，然后把themes\next_config.y">
-<meta property="og:updated_time" content="2016-03-27T15:19:10.000Z">
+<meta property="og:updated_time" content="2016-03-27T16:31:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客添加实用功能">
 <meta name="twitter:description" content="多说评论登录多说官网，登录后点我要安装，然后填写站点相关信息，最主要的是duoshuo_shortname这个字段，设置后之后修改themes\next_config.yml文件，把duoshuo_shortname改成你的，如下所示：
@@ -310,8 +310,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/27/utility-function/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/27/utility-function/" itemprop="commentsCount"></span>
+                <a href="/blog/2016/03/27/utility-function/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="/blog/2016/03/27/utility-function/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -338,6 +338,19 @@
 <h2 id="百度统计"><a href="#百度统计" class="headerlink" title="百度统计"></a>百度统计</h2><p>登录<a href="http://sitecenter.baidu.com" target="_blank" rel="external">百度统计</a>，转到获取代码截面，找到百度统计脚本id，然后把themes\next_config.yml文件下的baidu_analytics字段改成你的id，如下所示：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">baidu_analytics:</span><br></pre></td></tr></table></figure>
 <h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h2><p>本站用了 swiftype ，next主题也集成了 swiftype 搜索，需要到 swiftype 配置一个搜索引擎， 而后编辑主题配置文件， 修改 swiftype_key 字段，值为你的 swiftype 搜索引擎的 key。 详细的配置请参考：<a href="http://theme-next.iissnan.com/third-party-services.html#swfitype" target="_blank" rel="external">swiftype详细教程</a></p>
+<h2 id="添加阅读数"><a href="#添加阅读数" class="headerlink" title="添加阅读数"></a>添加阅读数</h2><ol>
+<li>进入<a href="https://leancloud.cn" target="_blank" rel="external">leancloud官网</a>注册一个帐号</li>
+<li>创建一个应用，名字随意</li>
+<li>进入应用，选择存储一栏，点击数据旁边的设置图案，选择创建Class</li>
+<li>在Class name一栏输入 Counter 后创建</li>
+<li>点击菜单栏中的设置，在应用 URL 填入自己的博客地址后保存，点击左侧应用 Key 一栏</li>
+<li>将APP Id和APP Key复制，填入博客中主题配置文件 _config.yml 中：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">leancloud_visitors:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  app_id:</span><br><span class="line">  app_key:</span><br></pre></td></tr></table></figure>
+<ol>
+<li>重新部署发布博客，记录文章访问量的唯一标识符是文章的发布日期以及文章的标题，因此请确保这两个数值组合的唯一性，如果更改了这两个数值，会造成文章阅读数值的清零重计</li>
+<li>为了确保该应用只在自己的博客上使用，在安全中心中添加 web 安全域名，填入自己博客域名，这样就只有自己的博客可以访问后台数据了</li>
+</ol>
 
       
     </div>
@@ -361,7 +374,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/27/hexo-github-blog/" rel="next" title="Hexo + github 搭建属于自己的博客">
+              <a href="/blog/2016/03/27/hexo-github-blog/" rel="next" title="Hexo + github 搭建属于自己的博客">
                 <i class="fa fa-chevron-left"></i> Hexo + github 搭建属于自己的博客
               </a>
             
@@ -382,6 +395,29 @@
 
     <div class="post-spread">
       
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
     </div>
   </div>
 
@@ -396,8 +432,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/27/utility-function/"
-           data-title="博客添加实用功能" data-url="http://yoursite.com/2016/03/27/utility-function/">
+      <div class="ds-thread" data-thread-key="/blog/2016/03/27/utility-function/"
+           data-title="博客添加实用功能" data-url="http://www.wjchan.com/blog/2016/03/27/utility-function/">
       </div>
     
   </div>
@@ -518,7 +554,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#多说评论"><span class="nav-number">1.</span> <span class="nav-text">多说评论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#百度统计"><span class="nav-number">2.</span> <span class="nav-text">百度统计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#站内搜索"><span class="nav-number">3.</span> <span class="nav-text">站内搜索</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#多说评论"><span class="nav-number">1.</span> <span class="nav-text">多说评论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#百度统计"><span class="nav-number">2.</span> <span class="nav-text">百度统计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#站内搜索"><span class="nav-number">3.</span> <span class="nav-text">站内搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加阅读数"><span class="nav-number">4.</span> <span class="nav-text">添加阅读数</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
@@ -539,7 +575,7 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy;  2015 - 
+  &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>

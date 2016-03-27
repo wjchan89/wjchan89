@@ -2,28 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2016/03/27/utility-function/</loc>
+    <loc>http://www.wjchan.com/blog/2016/03/27/utility-function/</loc>
     
-    <lastmod>2016-03-27T15:19:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/03/27/hexo-github-blog/</loc>
-    
-    <lastmod>2016-03-27T15:09:21.000Z</lastmod>
+    <lastmod>2016-03-27T16:31:58.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
+    <loc>http://www.wjchan.com/about/index.html</loc>
+    
+    <lastmod>2016-03-27T16:05:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wjchan.com/blog/2016/03/27/hexo-github-blog/</loc>
+    
+    <lastmod>2016-03-27T15:58:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wjchan.com/categories/index.html</loc>
     
     <lastmod>2016-03-27T14:35:51.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>http://www.wjchan.com/tags/index.html</loc>
     
     <lastmod>2016-03-27T14:35:00.000Z</lastmod>
     
