@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo github," />
+  <meta name="keywords" content="hexo," />
 
 
 
@@ -67,7 +67,7 @@
 <meta property="og:description" content="一直想维护一个博客，纪录下些什么，主要是做笔记吧。今天找了些时间搭了起来。总体还是很顺利的。以下是在 mac 环境下的操作。
 配置环境安装 Node.js到 Node.js 官网下载相应平台的最新版本，一路安装即可。
 安装 Gitgit 主要用于提交静态代码到 github ，mac 装了 xcode 就会自带 git 的。到 github 官网申请 git 帐号，主要用作博客的远程仓库、服务器。">
-<meta property="og:updated_time" content="2016-03-27T11:29:13.000Z">
+<meta property="og:updated_time" content="2016-03-27T11:37:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + github 搭建属于自己的博客">
 <meta name="twitter:description" content="一直想维护一个博客，纪录下些什么，主要是做笔记吧。今天找了些时间搭了起来。总体还是很顺利的。以下是在 mac 环境下的操作。
@@ -287,16 +287,16 @@
 <p>在博客工程根目录下执行，会生成静态文件 public 目录下。也可用完整命令 hexo generate</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
 <p>执行后，浏览器输入<a href="http://localhost:4000，简单版的博客出现了。完整版命令" target="_blank" rel="external">http://localhost:4000，简单版的博客出现了。完整版命令</a> hexo server，也可加调试参数 –debug。</p>
-<h3 id="配置-Github"><a href="#配置-Github" class="headerlink" title="配置 Github"></a>配置 Github</h3><h2 id="建立-Repository"><a href="#建立-Repository" class="headerlink" title="建立 Repository"></a>建立 Repository</h2><p>建立与你 github 用户名对应的仓库，仓库名必须为 your_user_name.github.io，固定写法，然后建立关联。如果不是这样，在浏览器用your_user_name.github.io将无法访问博客。<br>修改根目录下的工程配置文件_config.yml，在文件最后找到 deploy，修改为</p>
+<h2 id="配置-Github"><a href="#配置-Github" class="headerlink" title="配置 Github"></a>配置 Github</h2><h3 id="建立-Repository"><a href="#建立-Repository" class="headerlink" title="建立 Repository"></a>建立 Repository</h3><p>建立与你 github 用户名对应的仓库，仓库名必须为 your_user_name.github.io，固定写法，然后建立关联。如果不是这样，在浏览器用your_user_name.github.io将无法访问博客。<br>修改根目录下的工程配置文件_config.yml，在文件最后找到 deploy，修改为</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> <span class="built_in">type</span>: git </span><br><span class="line"> repository: https://github.com/your_user_name/your_user_name.github.io.git  </span><br><span class="line"> branch: master</span><br></pre></td></tr></table></figure>
-<h2 id="发布代码"><a href="#发布代码" class="headerlink" title="发布代码"></a>发布代码</h2><p>回到终端，在博客根目录执行</p>
+<h3 id="发布代码"><a href="#发布代码" class="headerlink" title="发布代码"></a>发布代码</h3><p>回到终端，在博客根目录执行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 <p>完整命令是 hexo deploy，这下会报错 ERROR Deployer not found: git，解决方法：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>再次发布，静态文件便上传到 github，再在浏览器输入 your_user_name.github.io 即可访问博客，有时会延迟几分钟。</p>
-<h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>hexo 的主题很多，可到网上搜索，我用的是 <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NextT</a></p>
-<h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-<h2 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h2><p>与所有 Hexo 主题启用的模式一样。 当 克隆/下载 完成后，打开 站点配置文件_config.yml， 找到 theme 字段，并将其值更改为 next。</p>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>hexo 的主题很多，可到网上搜索，我用的是 <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NextT</a></p>
+<h3 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<h3 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h3><p>与所有 Hexo 主题启用的模式一样。 当 克隆/下载 完成后，打开 站点配置文件_config.yml， 找到 theme 字段，并将其值更改为 next。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
 <p>使用 hexo clean 来清除 Hexo 的缓存。再次访问，主题生效。详细的 nextT 或者其他主题教程，可到 <a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">nextT</a>官方文档查看。</p>
 
@@ -313,7 +313,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo-github/" rel="tag">#hexo github</a>
+            <a href="/tags/hexo/" rel="tag">#hexo</a>
           
         </div>
       
@@ -426,7 +426,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置环境"><span class="nav-number">1.</span> <span class="nav-text">配置环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Git"><span class="nav-number">1.2.</span> <span class="nav-text">安装 Git</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo"><span class="nav-number">2.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建站"><span class="nav-number">2.2.</span> <span class="nav-text">建站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动本地服务器"><span class="nav-number">2.3.</span> <span class="nav-text">启动本地服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置-Github"><span class="nav-number">2.4.</span> <span class="nav-text">配置 Github</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建立-Repository"><span class="nav-number">3.</span> <span class="nav-text">建立 Repository</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布代码"><span class="nav-number">4.</span> <span class="nav-text">发布代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#主题"><span class="nav-number">4.1.</span> <span class="nav-text">主题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载主题"><span class="nav-number">5.</span> <span class="nav-text">下载主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启用主题"><span class="nav-number">6.</span> <span class="nav-text">启用主题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置环境"><span class="nav-number">1.</span> <span class="nav-text">配置环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Git"><span class="nav-number">1.2.</span> <span class="nav-text">安装 Git</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo"><span class="nav-number">2.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建站"><span class="nav-number">2.2.</span> <span class="nav-text">建站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动本地服务器"><span class="nav-number">2.3.</span> <span class="nav-text">启动本地服务器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Github"><span class="nav-number">3.</span> <span class="nav-text">配置 Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#建立-Repository"><span class="nav-number">3.1.</span> <span class="nav-text">建立 Repository</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布代码"><span class="nav-number">3.2.</span> <span class="nav-text">发布代码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题"><span class="nav-number">4.</span> <span class="nav-text">主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载主题"><span class="nav-number">4.1.</span> <span class="nav-text">下载主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用主题"><span class="nav-number">4.2.</span> <span class="nav-text">启用主题</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
