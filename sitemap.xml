@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.wjchan.com/about/index.html</loc>
+    
+    <lastmod>2016-03-28T10:57:24.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.wjchan.com/blog/2016/03/27/hexo-github-blog/</loc>
     
     <lastmod>2016-03-28T10:37:56.000Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://www.wjchan.com/blog/2016/03/28/qiniu-storage/</loc>
     
     <lastmod>2016-03-28T10:17:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wjchan.com/about/index.html</loc>
-    
-    <lastmod>2016-03-27T16:05:05.000Z</lastmod>
     
   </url>
   
