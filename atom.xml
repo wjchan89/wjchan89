@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.wjchan.com/"/>
-  <updated>2016-03-28T14:16:20.000Z</updated>
+  <updated>2016-03-28T21:07:01.000Z</updated>
   <id>http://www.wjchan.com/</id>
   
   <author>
@@ -16,11 +16,123 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>博客添加七牛图片云存储</title>
+    <title>markdown语法</title>
+    <link href="http://www.wjchan.com//blog/2016/03/29/markdown-grammar.html"/>
+    <id>http://www.wjchan.com//blog/2016/03/29/markdown-grammar.html</id>
+    <published>2016-03-28T20:27:08.000Z</published>
+    <updated>2016-03-28T21:07:01.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Markdown是一种极简的『标记语言』，将文本转为HTML。网上有各平台下的Markdown工具可用，也有在线的，我直接使用sublime搞定。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;sublime&quot;&gt;&lt;a href=&quot;#sublime&quot; class=&quot;headerlink&quot; title=&quot;sublime&quot;&gt;&lt;/a&gt;sublime&lt;/h2&gt;&lt;p&gt;安装在此忽略，我用的是sublime2。&lt;/p&gt;
+&lt;h3 id=&quot;安装Package-Control&quot;&gt;&lt;a href=&quot;#安装Package-Control&quot; class=&quot;headerlink&quot; title=&quot;安装Package Control&quot;&gt;&lt;/a&gt;安装Package Control&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;按Ctrl + ` 打开console&lt;/li&gt;
+&lt;li&gt;粘贴以下代码到console并回车&lt;/li&gt;
+&lt;li&gt;重启Sublime Text 2&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;import urllib2,os;pf=&amp;apos;Package Control.sublime-package&amp;apos;;ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),&amp;apos;wb&amp;apos;).write(urllib2.urlopen(&amp;apos;http://sublime.wbond.net/&amp;apos;+pf.replace(&amp;apos; &amp;apos;,&amp;apos;%20&amp;apos;)).read())&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;安装Markdown-Preview&quot;&gt;&lt;a href=&quot;#安装Markdown-Preview&quot; class=&quot;headerlink&quot; title=&quot;安装Markdown Preview&quot;&gt;&lt;/a&gt;安装Markdown Preview&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;按Command + Shift + P&lt;/li&gt;
+&lt;li&gt;输入pci 后回车(Package Control: Install Package)&lt;/li&gt;
+&lt;li&gt;稍等…&lt;/li&gt;
+&lt;li&gt;输入Markdown Preview回车&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;编辑&quot;&gt;&lt;a href=&quot;#编辑&quot; class=&quot;headerlink&quot; title=&quot;编辑&quot;&gt;&lt;/a&gt;编辑&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;按Command + N 新建一个文档&lt;/li&gt;
+&lt;li&gt;按Command + Shift + P&lt;/li&gt;
+&lt;li&gt;使用Markdown语法编辑文档&lt;/li&gt;
+&lt;li&gt;语法高亮，输入ssm 后回车(Set Syntax: Markdown)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;在浏览器预览Markdown文档&quot;&gt;&lt;a href=&quot;#在浏览器预览Markdown文档&quot; class=&quot;headerlink&quot; title=&quot;在浏览器预览Markdown文档&quot;&gt;&lt;/a&gt;在浏览器预览Markdown文档&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;按Command + Shift + P&lt;/li&gt;
+&lt;li&gt;输入mp 后回车(Markdown Preview: current file in browser)&lt;/li&gt;
+&lt;li&gt;此时就可以在浏览器里看到刚才编辑的文档了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;markdown语法&quot;&gt;&lt;a href=&quot;#markdown语法&quot; class=&quot;headerlink&quot; title=&quot;markdown语法&quot;&gt;&lt;/a&gt;markdown语法&lt;/h2&gt;&lt;h3 id=&quot;强调&quot;&gt;&lt;a href=&quot;#强调&quot; class=&quot;headerlink&quot; title=&quot;强调&quot;&gt;&lt;/a&gt;强调&lt;/h3&gt;&lt;p&gt;星号与下划线都可以，单是斜体，双是粗体，符号可跨行，符号可加空格。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;**一个人来到田纳西**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;__毫无疑问__&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;*我做的馅饼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;是全天下*&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_最好吃的_&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;一个人来到田纳西&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;毫无疑问&lt;/strong&gt;&lt;br&gt;&lt;em&gt;我做的馅饼&lt;br&gt;是全天下&lt;/em&gt;&lt;br&gt;&lt;em&gt;最好吃的&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;分割线&quot;&gt;&lt;a href=&quot;#分割线&quot; class=&quot;headerlink&quot; title=&quot;分割线&quot;&gt;&lt;/a&gt;分割线&lt;/h3&gt;&lt;p&gt;三个或更多-_*，必须单独一行，可含空格&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;标题：Setext方式&quot;&gt;&lt;a href=&quot;#标题：Setext方式&quot; class=&quot;headerlink&quot; title=&quot;标题：Setext方式&quot;&gt;&lt;/a&gt;标题：Setext方式&lt;/h3&gt;&lt;p&gt;三个或更多&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;大标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;===&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;小标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;---&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;大标题&quot;&gt;&lt;a href=&quot;#大标题&quot; class=&quot;headerlink&quot; title=&quot;大标题&quot;&gt;&lt;/a&gt;大标题&lt;/h1&gt;&lt;h2 id=&quot;小标题&quot;&gt;&lt;a href=&quot;#小标题&quot; class=&quot;headerlink&quot; title=&quot;小标题&quot;&gt;&lt;/a&gt;小标题&lt;/h2&gt;&lt;hr&gt;
+&lt;h3 id=&quot;标题：Atx方式&quot;&gt;&lt;a href=&quot;#标题：Atx方式&quot; class=&quot;headerlink&quot; title=&quot;标题：Atx方式&quot;&gt;&lt;/a&gt;标题：Atx方式&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 一级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;## 二级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;### 三级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#### 四级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;##### 五级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;###### 六级标题&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;无序列表&quot;&gt;&lt;a href=&quot;#无序列表&quot; class=&quot;headerlink&quot; title=&quot;无序列表&quot;&gt;&lt;/a&gt;无序列表&lt;/h3&gt;&lt;p&gt;符号之后的空格不能少，-+*效果一样，但不能混合使用，因混合是嵌套列表，内容可超长。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;- 无序列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 无序列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 无序列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 无序列表：我很长。我也很长！那比一比啊？比就比！我有这么长，你有我长吗？我有这么这么长！好吧，你赢了！&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;无序列表&lt;/li&gt;
+&lt;li&gt;无序列表&lt;/li&gt;
+&lt;li&gt;无序列表&lt;/li&gt;
+&lt;li&gt;无序列表：我很长。我也很长！那比一比啊？比就比！我有这么长，你有我长吗？我有这么这么长！好吧，你赢了！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;有序列表&quot;&gt;&lt;a href=&quot;#有序列表&quot; class=&quot;headerlink&quot; title=&quot;有序列表&quot;&gt;&lt;/a&gt;有序列表&lt;/h3&gt;&lt;p&gt;数字不能省略但可无序，点号之后的空格不能少&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. 有序列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. 有序列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3. 有序列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8. 有序列表&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;有序列表&lt;/li&gt;
+&lt;li&gt;有序列表&lt;/li&gt;
+&lt;li&gt;有序列表&lt;/li&gt;
+&lt;li&gt;有序列表&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;嵌套列表&quot;&gt;&lt;a href=&quot;#嵌套列表&quot; class=&quot;headerlink&quot; title=&quot;嵌套列表&quot;&gt;&lt;/a&gt;嵌套列表&lt;/h3&gt;&lt;p&gt;-+*可循环使用，但符号之后的空格不能少，符号之前的空格也不能少&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;- 嵌套列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; + 嵌套列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; + 嵌套列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - 嵌套列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   * 嵌套列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 嵌套列表&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;嵌套列表&lt;ul&gt;
+&lt;li&gt;嵌套列表&lt;/li&gt;
+&lt;li&gt;嵌套列表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;嵌套列表&lt;ul&gt;
+&lt;li&gt;嵌套列表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;嵌套列表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;文字超链：Inline方式&quot;&gt;&lt;a href=&quot;#文字超链：Inline方式&quot; class=&quot;headerlink&quot; title=&quot;文字超链：Inline方式&quot;&gt;&lt;/a&gt;文字超链：Inline方式&lt;/h3&gt;&lt;p&gt;Tooltips可省略&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[wjchan](http://www.wjchan.com &amp;quot;wjchan的博客&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.wjchan.com&quot; title=&quot;wjchan的博客&quot;&gt;wjchan&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;图片超链&quot;&gt;&lt;a href=&quot;#图片超链&quot; class=&quot;headerlink&quot; title=&quot;图片超链&quot;&gt;&lt;/a&gt;图片超链&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;![GitHub Mark](http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png &amp;quot;GitHub Mark&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png&quot; alt=&quot;GitHub Mark&quot; title=&quot;GitHub Mark&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;自动链接&quot;&gt;&lt;a href=&quot;#自动链接&quot; class=&quot;headerlink&quot; title=&quot;自动链接&quot;&gt;&lt;/a&gt;自动链接&lt;/h3&gt;&lt;p&gt;尖括号&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;http://www.wjchan.com&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.wjchan.com&quot;&gt;http://www.wjchan.com&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;代码：行内代码&quot;&gt;&lt;a href=&quot;#代码：行内代码&quot; class=&quot;headerlink&quot; title=&quot;代码：行内代码&quot;&gt;&lt;/a&gt;代码：行内代码&lt;/h3&gt;&lt;p&gt;用一个`包含&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;System.out.println(&amp;quot;行内代码&amp;quot;);&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;代码：段落代码&quot;&gt;&lt;a href=&quot;#代码：段落代码&quot; class=&quot;headerlink&quot; title=&quot;代码：段落代码&quot;&gt;&lt;/a&gt;代码：段落代码&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;``` java&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;String s = &amp;quot;行内代码&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;System.out.pringln(s);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;``` java&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;String s = &amp;quot;行内代码&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;System.out.pringln(s);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;参考自&lt;a href=&quot;http://www.appinn.com/markdown/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Markdown简明语法&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Markdown是一种极简的『标记语言』，将文本转为HTML。网上有各平台下的Markdown工具可用，也有在线的，我直接使用sublime搞定。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="博客" scheme="http://www.wjchan.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="sublime" scheme="http://www.wjchan.com/tags/sublime/"/>
+    
+      <category term="markdown" scheme="http://www.wjchan.com/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客添加七牛做图床</title>
     <link href="http://www.wjchan.com//blog/2016/03/28/qiniu-storage.html"/>
     <id>http://www.wjchan.com//blog/2016/03/28/qiniu-storage.html</id>
     <published>2016-03-28T09:44:16.000Z</published>
-    <updated>2016-03-28T14:16:20.000Z</updated>
+    <updated>2016-03-28T20:18:27.000Z</updated>
     
     <content type="html">&lt;p&gt;图片在博客日志中是非常重要的，可以选择集成在博客目录/source/images/下（我的头像是），但是博客目录下的图片每次都要通过 git 提交的，图片多了的时候，会非常慢，引入了七牛来管理图片，也可以起到分流作用。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;注册七牛&quot;&gt;&lt;a href=&quot;#注册七牛&quot; class=&quot;headerlink&quot; title=&quot;注册七牛&quot;&gt;&lt;/a&gt;注册七牛&lt;/h2&gt;&lt;p&gt;到 &lt;a href=&quot;https://portal.qiniu.com/signup?code=3lniq8748wpqq&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;七牛&lt;/a&gt;注册体验帐号，这是邀请链接，我也可以获得空间。&lt;/p&gt;
@@ -102,38 +214,50 @@
     <link href="http://www.wjchan.com//blog/2016/03/27/hexo-github-blog.html"/>
     <id>http://www.wjchan.com//blog/2016/03/27/hexo-github-blog.html</id>
     <published>2016-03-27T11:28:23.000Z</published>
-    <updated>2016-03-28T14:18:23.000Z</updated>
+    <updated>2016-03-28T21:06:41.000Z</updated>
     
-    <content type="html">&lt;p&gt;一直想维护一个博客，纪录下些什么，主要是做笔记吧。今天找了些时间搭了起来。总体还是很顺利的。纪录下来。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;一直想维护一个博客，纪录下些什么，主要是做笔记吧。无意间看到了 hexo，就像作者说的&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;如果你对默认配置满意，只需几个命令便可秒搭一个hexo。&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;如果你跟我一样喜欢折腾下，30分钟也足够个性化。&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;如果你过于喜欢折腾，可以折腾个把星期，尽情的玩。&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;搭建过程或许觉得有那么点小繁琐，但一旦搭建完成，写文章是极简单，极舒服的。只需要几个简单命令，就可以完成一切。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo n #写文章&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo g #生成&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo d #部署 # 可与hexo g合并为 hexo d -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;以下是在 mac 环境下的操作。&lt;/p&gt;
 &lt;h2 id=&quot;配置环境&quot;&gt;&lt;a href=&quot;#配置环境&quot; class=&quot;headerlink&quot; title=&quot;配置环境&quot;&gt;&lt;/a&gt;配置环境&lt;/h2&gt;&lt;h3 id=&quot;安装-Node-js&quot;&gt;&lt;a href=&quot;#安装-Node-js&quot; class=&quot;headerlink&quot; title=&quot;安装 Node.js&quot;&gt;&lt;/a&gt;安装 Node.js&lt;/h3&gt;&lt;p&gt;到 &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Node.js&lt;/a&gt; 官网下载相应平台的最新版本，一路安装即可。&lt;/p&gt;
 &lt;h3 id=&quot;安装-Git&quot;&gt;&lt;a href=&quot;#安装-Git&quot; class=&quot;headerlink&quot; title=&quot;安装 Git&quot;&gt;&lt;/a&gt;安装 Git&lt;/h3&gt;&lt;p&gt;git 主要用于提交静态代码到 github ，mac 装了 xcode 就会自带 git 的。&lt;br&gt;到 &lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt; 官网申请 git 帐号，主要用作博客的远程仓库、服务器。&lt;/p&gt;
+&lt;h3 id=&quot;安装-Sublime&quot;&gt;&lt;a href=&quot;#安装-Sublime&quot; class=&quot;headerlink&quot; title=&quot;安装 Sublime&quot;&gt;&lt;/a&gt;安装 Sublime&lt;/h3&gt;&lt;p&gt;主要用于写作，这个看个人所好，习惯了 Sublime，装上插件也是够用了。&lt;/p&gt;
 &lt;h2 id=&quot;Hexo&quot;&gt;&lt;a href=&quot;#Hexo&quot; class=&quot;headerlink&quot; title=&quot;Hexo&quot;&gt;&lt;/a&gt;Hexo&lt;/h2&gt;&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;p&gt;hexo 的安装最初跟着 &lt;a href=&quot;https://hexo.io/zh-cn/docs/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo&lt;/a&gt; 官方文档安装遇到了不少问题，最初用&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install -g hexo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;运行时产生大量 ERR ，mac 下用&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo npm install -g -unsafe-perm hexo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;正常安装。&lt;/p&gt;
 &lt;h3 id=&quot;hexo-插件&quot;&gt;&lt;a href=&quot;#hexo-插件&quot; class=&quot;headerlink&quot; title=&quot;hexo 插件&quot;&gt;&lt;/a&gt;hexo 插件&lt;/h3&gt;&lt;p&gt;自动生成 sitemap，RSS，部署到 git 等，建议安装。&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-index --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-archive --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-category --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-tag --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-server --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-heroku --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-rsync --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-openshift --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-renderer-marked@0.2 --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-renderer-stylus@0.2 --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-feed@1 --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-sitemap@1 --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-index --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-archive --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-category --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-tag --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-server --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-heroku --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-rsync --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-openshift --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-renderer-marked@0.2 --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-renderer-stylus@0.2 --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-feed@1 --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-sitemap@1 --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-baidu-sitemap --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&quot;建站&quot;&gt;&lt;a href=&quot;#建站&quot; class=&quot;headerlink&quot; title=&quot;建站&quot;&gt;&lt;/a&gt;建站&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ mkdir &amp;lt;folder&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ &lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; &amp;lt;folder&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ hexo init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;新建完成后，指定文件夹的目录如下：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── _config.yml&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── package.json&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── scaffolds&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── source&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|   ├── _drafts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|   └── _posts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;└── themes&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;├── _config.yml&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── package.json&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── scaffolds&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── source&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|   ├── _drafts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|   └── _posts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;└── themes&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;_config.yml&lt;br&gt;网站的配置信息，可以在此配置大部分的参数。&lt;/p&gt;
 &lt;p&gt;package.json&lt;br&gt;应用程序的信息。EJS, Stylus 和 Markdown renderer 已默认安装，可以自由移除。&lt;/p&gt;
 &lt;p&gt;scaffolds&lt;br&gt;模版文件夹。当新建文章时，Hexo 会根据 scaffold 来建立文件。&lt;/p&gt;
 &lt;p&gt;source&lt;br&gt;资源文件夹是存放用户资源的地方。除 &lt;em&gt;posts 文件夹之外，开头命名为 &lt;/em&gt; (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。&lt;/p&gt;
 &lt;p&gt;themes&lt;br&gt;主题文件夹。Hexo 会根据主题来生成静态页面。&lt;/p&gt;
-&lt;h3 id=&quot;启动本地服务器&quot;&gt;&lt;a href=&quot;#启动本地服务器&quot; class=&quot;headerlink&quot; title=&quot;启动本地服务器&quot;&gt;&lt;/a&gt;启动本地服务器&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;在博客工程根目录下执行，会生成静态文件 public 目录下。也可用完整命令 hexo generate&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;执行后，浏览器输入 &lt;a href=&quot;http://localhost:4000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4000&lt;/a&gt; ，简单版的博客出现了。完整版命令 hexo server，也可加调试参数 –debug。&lt;/p&gt;
-&lt;h2 id=&quot;配置-Github&quot;&gt;&lt;a href=&quot;#配置-Github&quot; class=&quot;headerlink&quot; title=&quot;配置 Github&quot;&gt;&lt;/a&gt;配置 Github&lt;/h2&gt;&lt;h3 id=&quot;建立-Repository&quot;&gt;&lt;a href=&quot;#建立-Repository&quot; class=&quot;headerlink&quot; title=&quot;建立 Repository&quot;&gt;&lt;/a&gt;建立 Repository&lt;/h3&gt;&lt;p&gt;建立与你 github 用户名对应的仓库，仓库名必须为 your_user_name.github.io，固定写法，然后建立关联。如果不是这样，在浏览器用your_user_name.github.io将无法访问博客。&lt;br&gt;修改根目录下的工程配置文件_config.yml，在文件最后找到 deploy，修改为&lt;/p&gt;
+&lt;h3 id=&quot;生成静态页面&quot;&gt;&lt;a href=&quot;#生成静态页面&quot; class=&quot;headerlink&quot; title=&quot;生成静态页面&quot;&gt;&lt;/a&gt;生成静态页面&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在博客工程根目录下执行，会生成静态文件 public 目录下。也可用完整命令 &lt;code&gt;hexo generate&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;本地启动&quot;&gt;&lt;a href=&quot;#本地启动&quot; class=&quot;headerlink&quot; title=&quot;本地启动&quot;&gt;&lt;/a&gt;本地启动&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;执行后，浏览器输入 &lt;a href=&quot;http://localhost:4000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4000&lt;/a&gt; ，简单版的博客出现了。完整版命令 &lt;code&gt;hexo server&lt;/code&gt;，也可加调试参数 &lt;code&gt;--debug&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;Github&quot;&gt;&lt;a href=&quot;#Github&quot; class=&quot;headerlink&quot; title=&quot;Github&quot;&gt;&lt;/a&gt;Github&lt;/h2&gt;&lt;h3 id=&quot;建立-Repository&quot;&gt;&lt;a href=&quot;#建立-Repository&quot; class=&quot;headerlink&quot; title=&quot;建立 Repository&quot;&gt;&lt;/a&gt;建立 Repository&lt;/h3&gt;&lt;p&gt;建立与你 github 用户名对应的仓库，仓库名必须为 your_user_name.github.io，固定写法，然后建立关联。如果不是这样，在浏览器用your_user_name.github.io将无法访问博客。&lt;br&gt;修改根目录下的工程配置文件_config.yml，在文件最后找到 deploy，修改为&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; type: git &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; repository: https://github.com/your_user_name/your_user_name.github.io.git  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; branch: master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&quot;发布代码&quot;&gt;&lt;a href=&quot;#发布代码&quot; class=&quot;headerlink&quot; title=&quot;发布代码&quot;&gt;&lt;/a&gt;发布代码&lt;/h3&gt;&lt;p&gt;回到终端，在博客根目录执行&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;完整命令是 hexo deploy，这下会报错 ERROR Deployer not found: git，解决方法：&lt;/p&gt;
+&lt;p&gt;完整命令是 hexo deploy，这如果报错 ERROR Deployer not found: git，解决方法：&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;再次发布，静态文件便上传到 github，再在浏览器输入 your_user_name.github.io 即可访问博客，有时会延迟几分钟。&lt;/p&gt;
+&lt;h3 id=&quot;写文章&quot;&gt;&lt;a href=&quot;#写文章&quot; class=&quot;headerlink&quot; title=&quot;写文章&quot;&gt;&lt;/a&gt;写文章&lt;/h3&gt;&lt;p&gt;执行new命令，生成指定名称的文章至hexo\source\_posts\postName.md。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new [layout] &amp;quot;postName&amp;quot; #新建文章&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;其中layout是可选参数，默认值为post。有哪些layout可以到scaffolds目录下查看，这些文件名称就是layout名称。当然可以添加自己的layout，方法就是添加一个文件即可，同时也可以编辑现有的layout，比如post的layout默认是hexo\scaffolds\post.md&lt;/p&gt;
 &lt;h2 id=&quot;主题&quot;&gt;&lt;a href=&quot;#主题&quot; class=&quot;headerlink&quot; title=&quot;主题&quot;&gt;&lt;/a&gt;主题&lt;/h2&gt;&lt;p&gt;hexo 的主题很多，可到网上搜索，我用的是 &lt;a href=&quot;https://github.com/iissnan/hexo-theme-next&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;NextT&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;下载主题&quot;&gt;&lt;a href=&quot;#下载主题&quot; class=&quot;headerlink&quot; title=&quot;下载主题&quot;&gt;&lt;/a&gt;下载主题&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ &lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; your-hexo-site&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; https://github.com/iissnan/hexo-theme-next themes/next&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&quot;启用主题&quot;&gt;&lt;a href=&quot;#启用主题&quot; class=&quot;headerlink&quot; title=&quot;启用主题&quot;&gt;&lt;/a&gt;启用主题&lt;/h3&gt;&lt;p&gt;与所有 Hexo 主题启用的模式一样。 当 克隆/下载 完成后，打开 站点配置文件_config.yml， 找到 theme 字段，并将其值更改为 next。&lt;/p&gt;
@@ -157,7 +281,14 @@
     
     <summary type="html">
     
-      &lt;p&gt;一直想维护一个博客，纪录下些什么，主要是做笔记吧。今天找了些时间搭了起来。总体还是很顺利的。纪录下来。&lt;br&gt;
+      &lt;p&gt;一直想维护一个博客，纪录下些什么，主要是做笔记吧。无意间看到了 hexo，就像作者说的&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;如果你对默认配置满意，只需几个命令便可秒搭一个hexo。&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;如果你跟我一样喜欢折腾下，30分钟也足够个性化。&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;如果你过于喜欢折腾，可以折腾个把星期，尽情的玩。&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;搭建过程或许觉得有那么点小繁琐，但一旦搭建完成，写文章是极简单，极舒服的。只需要几个简单命令，就可以完成一切。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo n #写文章&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo g #生成&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo d #部署 # 可与hexo g合并为 hexo d -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -165,6 +296,8 @@
     
     
       <category term="hexo" scheme="http://www.wjchan.com/tags/hexo/"/>
+    
+      <category term="Github" scheme="http://www.wjchan.com/tags/Github/"/>
     
   </entry>
   

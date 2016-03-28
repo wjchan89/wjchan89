@@ -4,6 +4,70 @@
 
     
   <url>
+    <loc>http://www.wjchan.com//blog/2016/03/29/markdown-grammar.html</loc>
+    <lastmod>2016-03-28T21:07:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>markdown语法</title>
+        <pubTime>2016-03-28T20:27:08.000Z</pubTime>
+        
+        <tag>sublime</tag>
+         
+        <tag>markdown</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客" url="http://www.wjchan.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.wjchan.com//blog/2016/03/27/hexo-github-blog.html</loc>
+    <lastmod>2016-03-28T21:06:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo + github 搭建属于自己的博客</title>
+        <pubTime>2016-03-27T11:28:23.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>Github</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客" url="http://www.wjchan.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.wjchan.com//blog/2016/03/28/qiniu-storage.html</loc>
+    <lastmod>2016-03-28T20:18:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>博客添加七牛做图床</title>
+        <pubTime>2016-03-28T09:44:16.000Z</pubTime>
+        
+        <tag>七牛云存储</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客" url="http://www.wjchan.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.wjchan.com//blog/2016/03/27/utility-function.html</loc>
     <lastmod>2016-03-28T14:47:41.000Z</lastmod>
     <data>
@@ -20,46 +84,6 @@
         <tag>swiftype</tag>
          
         <tag>阅读次数</tag>
-         
-         
-           
-             
-              <breadCrumb title="博客" url="http://www.wjchan.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.wjchan.com//blog/2016/03/27/hexo-github-blog.html</loc>
-    <lastmod>2016-03-28T14:18:23.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo + github 搭建属于自己的博客</title>
-        <pubTime>2016-03-27T11:28:23.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="博客" url="http://www.wjchan.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.wjchan.com//blog/2016/03/28/qiniu-storage.html</loc>
-    <lastmod>2016-03-28T14:16:20.000Z</lastmod>
-    <data>
-        <display>
-        <title>博客添加七牛图片云存储</title>
-        <pubTime>2016-03-28T09:44:16.000Z</pubTime>
-        
-        <tag>七牛云存储</tag>
          
          
            

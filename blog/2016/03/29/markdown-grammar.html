@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo,多说评论,百度统计,swiftype,阅读次数," />
+  <meta name="keywords" content="sublime,markdown," />
 
 
 
@@ -59,16 +59,18 @@
 
 
 
-<meta name="description" content="给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数等实用功能，让博客更加丰富、更加个性化。">
+<meta name="description" content="Markdown是一种极简的『标记语言』，将文本转为HTML。网上有各平台下的Markdown工具可用，也有在线的，我直接使用sublime搞定。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客添加实用功能">
-<meta property="og:url" content="http://www.wjchan.com/blog/2016/03/27/utility-function.html">
+<meta property="og:title" content="markdown语法">
+<meta property="og:url" content="http://www.wjchan.com/blog/2016/03/29/markdown-grammar.html">
 <meta property="og:site_name" content="wjchan">
-<meta property="og:description" content="给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数等实用功能，让博客更加丰富、更加个性化。">
-<meta property="og:updated_time" content="2016-03-28T14:47:41.000Z">
+<meta property="og:description" content="Markdown是一种极简的『标记语言』，将文本转为HTML。网上有各平台下的Markdown工具可用，也有在线的，我直接使用sublime搞定。">
+<meta property="og:image" content="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png">
+<meta property="og:updated_time" content="2016-03-28T21:07:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客添加实用功能">
-<meta name="twitter:description" content="给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数等实用功能，让博客更加丰富、更加个性化。">
+<meta name="twitter:title" content="markdown语法">
+<meta name="twitter:description" content="Markdown是一种极简的『标记语言』，将文本转为HTML。网上有各平台下的Markdown工具可用，也有在线的，我直接使用sublime搞定。">
+<meta name="twitter:image" content="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png">
 
 
 
@@ -86,7 +88,7 @@
   };
 </script>
 
-  <title> 博客添加实用功能 | wjchan </title>
+  <title> markdown语法 | wjchan </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -262,7 +264,7 @@
             
             
               
-                博客添加实用功能
+                markdown语法
               
             
           </h1>
@@ -274,8 +276,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-27T22:55:58+08:00" content="2016-03-27">
-              2016-03-27
+            <time itemprop="dateCreated" datetime="2016-03-29T04:27:08+08:00" content="2016-03-29">
+              2016-03-29
             </time>
           </span>
 
@@ -304,8 +306,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/blog/2016/03/27/utility-function.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="/blog/2016/03/27/utility-function.html" itemprop="commentsCount"></span>
+                <a href="/blog/2016/03/29/markdown-grammar.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="/blog/2016/03/29/markdown-grammar.html" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -315,7 +317,7 @@
 
           
           
-             <span id="/blog/2016/03/27/utility-function.html" class="leancloud_visitors" data-flag-title="博客添加实用功能">
+             <span id="/blog/2016/03/29/markdown-grammar.html" class="leancloud_visitors" data-flag-title="markdown语法">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -336,26 +338,94 @@
       
 
       
-        <p>给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数等实用功能，让博客更加丰富、更加个性化。<br><a id="more"></a></p>
-<h2 id="多说评论"><a href="#多说评论" class="headerlink" title="多说评论"></a>多说评论</h2><p>登录<a href="http://duoshuo.com" target="_blank" rel="external">多说官网</a>，登录后点我要安装，然后填写站点相关信息，最主要的是duoshuo_shortname这个字段，设置后之后修改themes\next\_config.yml文件，把duoshuo_shortname改成你的，如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">duoshuo_shortname: wjchan</span><br></pre></td></tr></table></figure>
-<h2 id="百度统计"><a href="#百度统计" class="headerlink" title="百度统计"></a>百度统计</h2><p>登录<a href="http://sitecenter.baidu.com" target="_blank" rel="external">百度统计</a>，转到获取代码截面，找到百度统计脚本id，然后把themes\next\_config.yml文件下的baidu_analytics字段改成你的id，如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">baidu_analytics:</span><br></pre></td></tr></table></figure>
-<h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h2><p>本站用了 swiftype ，next主题也集成了 swiftype 搜索，需要到 swiftype 配置一个搜索引擎， 而后编辑主题配置文件， 修改 swiftype_key 字段，值为你的 swiftype 搜索引擎的 key。 详细的配置请参考：<a href="http://theme-next.iissnan.com/third-party-services.html#swfitype" target="_blank" rel="external">swiftype详细教程</a></p>
-<h2 id="添加阅读数"><a href="#添加阅读数" class="headerlink" title="添加阅读数"></a>添加阅读数</h2><p>nexT 主题已经完美支持了阅读数，要做的只是拿到 appid 和 appkey</p>
-<ol>
-<li>进入<a href="https://leancloud.cn" target="_blank" rel="external">leancloud官网</a>注册一个帐号</li>
-<li>创建一个应用，名字随意</li>
-<li>进入应用，选择存储一栏，点击数据旁边的设置图案，选择创建Class</li>
-<li>在Class name一栏输入 Counter 后创建</li>
-<li>点击菜单栏中的设置，在应用 URL 填入自己的博客地址后保存，点击左侧应用 Key 一栏</li>
-<li>将APP Id和APP Key复制，填入博客中主题配置文件 _config.yml 中：</li>
+        <p>Markdown是一种极简的『标记语言』，将文本转为HTML。网上有各平台下的Markdown工具可用，也有在线的，我直接使用sublime搞定。<br><a id="more"></a></p>
+<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><p>安装在此忽略，我用的是sublime2。</p>
+<h3 id="安装Package-Control"><a href="#安装Package-Control" class="headerlink" title="安装Package Control"></a>安装Package Control</h3><ol>
+<li>按Ctrl + ` 打开console</li>
+<li>粘贴以下代码到console并回车</li>
+<li>重启Sublime Text 2</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">leancloud_visitors:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  app_id:</span><br><span class="line">  app_key:</span><br></pre></td></tr></table></figure>
-<ol>
-<li>重新部署发布博客，记录文章访问量的唯一标识符是文章的发布日期以及文章的标题，因此请确保这两个数值组合的唯一性，如果更改了这两个数值，会造成文章阅读数值的清零重计</li>
-<li>为了确保该应用只在自己的博客上使用，在安全中心中添加 web 安全域名，填入自己博客域名，这样就只有自己的博客可以访问后台数据了</li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import urllib2,os;pf=&apos;Package Control.sublime-package&apos;;ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),&apos;wb&apos;).write(urllib2.urlopen(&apos;http://sublime.wbond.net/&apos;+pf.replace(&apos; &apos;,&apos;%20&apos;)).read())</span><br></pre></td></tr></table></figure>
+<h3 id="安装Markdown-Preview"><a href="#安装Markdown-Preview" class="headerlink" title="安装Markdown Preview"></a>安装Markdown Preview</h3><ol>
+<li>按Command + Shift + P</li>
+<li>输入pci 后回车(Package Control: Install Package)</li>
+<li>稍等…</li>
+<li>输入Markdown Preview回车</li>
 </ol>
+<h3 id="编辑"><a href="#编辑" class="headerlink" title="编辑"></a>编辑</h3><ol>
+<li>按Command + N 新建一个文档</li>
+<li>按Command + Shift + P</li>
+<li>使用Markdown语法编辑文档</li>
+<li>语法高亮，输入ssm 后回车(Set Syntax: Markdown)</li>
+</ol>
+<h3 id="在浏览器预览Markdown文档"><a href="#在浏览器预览Markdown文档" class="headerlink" title="在浏览器预览Markdown文档"></a>在浏览器预览Markdown文档</h3><ol>
+<li>按Command + Shift + P</li>
+<li>输入mp 后回车(Markdown Preview: current file in browser)</li>
+<li>此时就可以在浏览器里看到刚才编辑的文档了</li>
+</ol>
+<h2 id="markdown语法"><a href="#markdown语法" class="headerlink" title="markdown语法"></a>markdown语法</h2><h3 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h3><p>星号与下划线都可以，单是斜体，双是粗体，符号可跨行，符号可加空格。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">**一个人来到田纳西**</span><br><span class="line"></span><br><span class="line">__毫无疑问__</span><br><span class="line">*我做的馅饼</span><br><span class="line">是全天下*</span><br><span class="line">_最好吃的_</span><br></pre></td></tr></table></figure>
+<p><strong>一个人来到田纳西</strong></p>
+<p><strong>毫无疑问</strong><br><em>我做的馅饼<br>是全天下</em><br><em>最好吃的</em></p>
+<hr>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>三个或更多-_*，必须单独一行，可含空格</p>
+<hr>
+<h3 id="标题：Setext方式"><a href="#标题：Setext方式" class="headerlink" title="标题：Setext方式"></a>标题：Setext方式</h3><p>三个或更多</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">大标题</span><br><span class="line">===</span><br><span class="line">小标题</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h1 id="大标题"><a href="#大标题" class="headerlink" title="大标题"></a>大标题</h1><h2 id="小标题"><a href="#小标题" class="headerlink" title="小标题"></a>小标题</h2><hr>
+<h3 id="标题：Atx方式"><a href="#标题：Atx方式" class="headerlink" title="标题：Atx方式"></a>标题：Atx方式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>符号之后的空格不能少，-+*效果一样，但不能混合使用，因混合是嵌套列表，内容可超长。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 无序列表</span><br><span class="line">- 无序列表</span><br><span class="line">- 无序列表</span><br><span class="line">- 无序列表：我很长。我也很长！那比一比啊？比就比！我有这么长，你有我长吗？我有这么这么长！好吧，你赢了！</span><br></pre></td></tr></table></figure>
+<ul>
+<li>无序列表</li>
+<li>无序列表</li>
+<li>无序列表</li>
+<li>无序列表：我很长。我也很长！那比一比啊？比就比！我有这么长，你有我长吗？我有这么这么长！好吧，你赢了！</li>
+</ul>
+<hr>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>数字不能省略但可无序，点号之后的空格不能少</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. 有序列表</span><br><span class="line">2. 有序列表</span><br><span class="line">3. 有序列表</span><br><span class="line">8. 有序列表</span><br></pre></td></tr></table></figure>
+<ol>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>有序列表</li>
+</ol>
+<hr>
+<h3 id="嵌套列表"><a href="#嵌套列表" class="headerlink" title="嵌套列表"></a>嵌套列表</h3><p>-+*可循环使用，但符号之后的空格不能少，符号之前的空格也不能少</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">- 嵌套列表</span><br><span class="line"> + 嵌套列表</span><br><span class="line"> + 嵌套列表</span><br><span class="line">  - 嵌套列表</span><br><span class="line">   * 嵌套列表</span><br><span class="line">- 嵌套列表</span><br></pre></td></tr></table></figure>
+<ul>
+<li>嵌套列表<ul>
+<li>嵌套列表</li>
+<li>嵌套列表</li>
+</ul>
+<ul>
+<li>嵌套列表<ul>
+<li>嵌套列表</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>嵌套列表</li>
+</ul>
+<hr>
+<h3 id="文字超链：Inline方式"><a href="#文字超链：Inline方式" class="headerlink" title="文字超链：Inline方式"></a>文字超链：Inline方式</h3><p>Tooltips可省略</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[wjchan](http://www.wjchan.com &quot;wjchan的博客&quot;)</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.wjchan.com" title="wjchan的博客">wjchan</a></p>
+<h3 id="图片超链"><a href="#图片超链" class="headerlink" title="图片超链"></a>图片超链</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![GitHub Mark](http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png &quot;GitHub Mark&quot;)</span><br></pre></td></tr></table></figure>
+<p><img src="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Mark" title="GitHub Mark"></p>
+<hr>
+<h3 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h3><p>尖括号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;http://www.wjchan.com&gt;</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.wjchan.com">http://www.wjchan.com</a></p>
+<hr>
+<h3 id="代码：行内代码"><a href="#代码：行内代码" class="headerlink" title="代码：行内代码"></a>代码：行内代码</h3><p>用一个`包含</p>
+<p><code>System.out.println(&quot;行内代码&quot;);</code></p>
+<hr>
+<h3 id="代码：段落代码"><a href="#代码：段落代码" class="headerlink" title="代码：段落代码"></a>代码：段落代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">``` java</span><br><span class="line">String s = &quot;行内代码&quot;;</span><br><span class="line">System.out.pringln(s);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">``` java</span><br><span class="line">String s = &quot;行内代码&quot;;</span><br><span class="line">System.out.pringln(s);</span><br></pre></td></tr></table></figure>
+<p>参考自<a href="http://www.appinn.com/markdown/" target="_blank" rel="external">Markdown简明语法</a></p>
 
       
     </div>
@@ -370,15 +440,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag">#hexo</a>
+            <a href="/tags/sublime/" rel="tag">#sublime</a>
           
-            <a href="/tags/多说评论/" rel="tag">#多说评论</a>
-          
-            <a href="/tags/百度统计/" rel="tag">#百度统计</a>
-          
-            <a href="/tags/swiftype/" rel="tag">#swiftype</a>
-          
-            <a href="/tags/阅读次数/" rel="tag">#阅读次数</a>
+            <a href="/tags/markdown/" rel="tag">#markdown</a>
           
         </div>
       
@@ -387,17 +451,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/2016/03/27/hexo-github-blog.html" rel="next" title="Hexo + github 搭建属于自己的博客">
-                <i class="fa fa-chevron-left"></i> Hexo + github 搭建属于自己的博客
+              <a href="/blog/2016/03/28/qiniu-storage.html" rel="next" title="博客添加七牛做图床">
+                <i class="fa fa-chevron-left"></i> 博客添加七牛做图床
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/blog/2016/03/28/qiniu-storage.html" rel="prev" title="博客添加七牛做图床">
-                博客添加七牛做图床 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -449,8 +509,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="/blog/2016/03/27/utility-function.html"
-           data-title="博客添加实用功能" data-url="http://www.wjchan.com/blog/2016/03/27/utility-function.html">
+      <div class="ds-thread" data-thread-key="/blog/2016/03/29/markdown-grammar.html"
+           data-title="markdown语法" data-url="http://www.wjchan.com/blog/2016/03/29/markdown-grammar.html">
       </div>
     
   </div>
@@ -580,7 +640,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#多说评论"><span class="nav-number">1.</span> <span class="nav-text">多说评论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#百度统计"><span class="nav-number">2.</span> <span class="nav-text">百度统计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#站内搜索"><span class="nav-number">3.</span> <span class="nav-text">站内搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加阅读数"><span class="nav-number">4.</span> <span class="nav-text">添加阅读数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#sublime"><span class="nav-number">1.</span> <span class="nav-text">sublime</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Package-Control"><span class="nav-number">1.1.</span> <span class="nav-text">安装Package Control</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Markdown-Preview"><span class="nav-number">1.2.</span> <span class="nav-text">安装Markdown Preview</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑"><span class="nav-number">1.3.</span> <span class="nav-text">编辑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在浏览器预览Markdown文档"><span class="nav-number">1.4.</span> <span class="nav-text">在浏览器预览Markdown文档</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown语法"><span class="nav-number">2.</span> <span class="nav-text">markdown语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#强调"><span class="nav-number">2.1.</span> <span class="nav-text">强调</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分割线"><span class="nav-number">2.2.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标题：Setext方式"><span class="nav-number">2.3.</span> <span class="nav-text">标题：Setext方式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#大标题"><span class="nav-number"></span> <span class="nav-text">大标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#小标题"><span class="nav-number">1.</span> <span class="nav-text">小标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#标题：Atx方式"><span class="nav-number">1.1.</span> <span class="nav-text">标题：Atx方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无序列表"><span class="nav-number">1.2.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有序列表"><span class="nav-number">1.3.</span> <span class="nav-text">有序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#嵌套列表"><span class="nav-number">1.4.</span> <span class="nav-text">嵌套列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字超链：Inline方式"><span class="nav-number">1.5.</span> <span class="nav-text">文字超链：Inline方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片超链"><span class="nav-number">1.6.</span> <span class="nav-text">图片超链</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自动链接"><span class="nav-number">1.7.</span> <span class="nav-text">自动链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：行内代码"><span class="nav-number">1.8.</span> <span class="nav-text">代码：行内代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：段落代码"><span class="nav-number">1.9.</span> <span class="nav-text">代码：段落代码</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

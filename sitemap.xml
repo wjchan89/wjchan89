@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.wjchan.com/blog/2016/03/27/utility-function.html</loc>
+    <loc>http://www.wjchan.com/blog/2016/03/29/markdown-grammar.html</loc>
     
-    <lastmod>2016-03-28T14:47:41.000Z</lastmod>
+    <lastmod>2016-03-28T21:07:01.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.wjchan.com/blog/2016/03/27/hexo-github-blog.html</loc>
     
-    <lastmod>2016-03-28T14:18:23.000Z</lastmod>
+    <lastmod>2016-03-28T21:06:41.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.wjchan.com/blog/2016/03/28/qiniu-storage.html</loc>
     
-    <lastmod>2016-03-28T14:16:20.000Z</lastmod>
+    <lastmod>2016-03-28T20:18:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wjchan.com/blog/2016/03/27/utility-function.html</loc>
+    
+    <lastmod>2016-03-28T14:47:41.000Z</lastmod>
     
   </url>
   
