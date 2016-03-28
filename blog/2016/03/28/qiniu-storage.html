@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="七牛云存储," />
 
 
 
@@ -59,15 +59,19 @@
 
 
 
-<meta name="description" content="不忘初心，方得始终。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="wjchan">
-<meta property="og:url" content="http://www.wjchan.com/index.html">
+<meta name="description" content="图片在博客日志中是非常重要的，可以选择集成在博客目录/source/images/下（我的头像是），但是博客目录下的图片每次都要通过 git 提交的，图片多了的时候，会非常慢，引入了七牛来管理图片，也可以起到分流作用。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客添加七牛图片云存储">
+<meta property="og:url" content="http://www.wjchan.com/blog/2016/03/28/qiniu-storage.html">
 <meta property="og:site_name" content="wjchan">
-<meta property="og:description" content="不忘初心，方得始终。">
+<meta property="og:description" content="图片在博客日志中是非常重要的，可以选择集成在博客目录/source/images/下（我的头像是），但是博客目录下的图片每次都要通过 git 提交的，图片多了的时候，会非常慢，引入了七牛来管理图片，也可以起到分流作用。">
+<meta property="og:image" content="http://7xsde6.com1.z0.glb.clouddn.com/1.jpg">
+<meta property="og:image" content="http://7xsde6.com1.z0.glb.clouddn.com/2.jpg">
+<meta property="og:updated_time" content="2016-03-28T13:10:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wjchan">
-<meta name="twitter:description" content="不忘初心，方得始终。">
+<meta name="twitter:title" content="博客添加七牛图片云存储">
+<meta name="twitter:description" content="图片在博客日志中是非常重要的，可以选择集成在博客目录/source/images/下（我的头像是），但是博客目录下的图片每次都要通过 git 提交的，图片多了的时候，会非常慢，引入了七牛来管理图片，也可以起到分流作用。">
+<meta name="twitter:image" content="http://7xsde6.com1.z0.glb.clouddn.com/1.jpg">
 
 
 
@@ -85,7 +89,7 @@
   };
 </script>
 
-  <title> wjchan </title>
+  <title> 博客添加七牛图片云存储 | wjchan </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -116,9 +120,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -241,9 +243,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -263,10 +265,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/blog/2016/03/28/qiniu-storage.html" itemprop="url">
-                  博客添加七牛图片云存储
-                </a>
+                博客添加七牛图片云存储
               
             
           </h1>
@@ -340,297 +339,104 @@
       
 
       
-        
-          <p>图片在博客日志中是非常重要的，可以选择集成在博客目录/source/images/下（我的头像是），但是博客目录下的图片每次都要通过 git 提交的，图片多了的时候，会非常慢，引入了七牛来管理图片，也可以起到分流作用。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2016/03/28/qiniu-storage.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+        <p>图片在博客日志中是非常重要的，可以选择集成在博客目录/source/images/下（我的头像是），但是博客目录下的图片每次都要通过 git 提交的，图片多了的时候，会非常慢，引入了七牛来管理图片，也可以起到分流作用。<br><a id="more"></a></p>
+<p>图片在博客日志中是非常重要的，可以选择集成在博客目录/source/images/下（我的头像是），但是博客目录下的图片每次都要通过 git 提交的，图片多了的时候，会非常慢，引入了七牛来管理图片。</p>
+<h2 id="注册七牛"><a href="#注册七牛" class="headerlink" title="注册七牛"></a>注册七牛</h2><p>到 <a href="https://portal.qiniu.com/signup?code=3lniq8748wpqq" target="_blank" rel="external">七牛</a>注册体验帐号，这是邀请链接，我也可以获得空间。</p>
+<h2 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h2><p>注册完后，添加一个公开空间，名称随便，只有公开空间，才能访问到图片。</p>
+<p><img src="http://7xsde6.com1.z0.glb.clouddn.com/1.jpg" alt="公开空间"></p>
+<p>添加了空间后，点击内容管理，上传，成功后，点击图片，将会在右下方得到图片链接。</p>
+<p><img src="http://7xsde6.com1.z0.glb.clouddn.com/2.jpg" alt="上传图片"></p>
+<h2 id="获取图片"><a href="#获取图片" class="headerlink" title="获取图片"></a>获取图片</h2><p>通过如下格式在博客中获取图片。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](http://7xsde6.com1.z0.glb.clouddn.com/2.jpg)</span><br></pre></td></tr></table></figure>
+<h2 id="升级标准用户"><a href="#升级标准用户" class="headerlink" title="升级标准用户"></a>升级标准用户</h2><p>体验用户只有1G的存储空间，标准用户拥有10G存储空间，每月下载流量10G，PUT/DELETE 10万次请求，GET 100万次请求，对个人博客足够用了，标准用户也是免费的，需要提供个人信息认证。</p>
+<h2 id="上传优化"><a href="#上传优化" class="headerlink" title="上传优化"></a>上传优化</h2><p>可以通过 qrsync 命令行上传图片，qrsync 是一个根据七牛云存储API实现的简易命令行辅助上传同步工具，支持断点续上传，增量同步，它可将用户本地的某目录的文件同步到七牛云存储中，同步或上传几百GB甚至上TB的文件毫无鸭梨。详细可以参考 <a href="http://developer.qiniu.com/code/v6/tool/qrsync.html" target="_blank" rel="external">qrsync 教程</a></p>
+
       
     </div>
 
     <div>
       
+        
+      
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/blog/2016/03/27/utility-function.html" itemprop="url">
-                  博客添加实用功能
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-27T22:55:58+08:00" content="2016-03-27">
-              2016-03-27
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/博客/" itemprop="url" rel="index">
-                    <span itemprop="name">博客</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
+            <a href="/tags/七牛云存储/" rel="tag">#七牛云存储</a>
           
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/blog/2016/03/27/utility-function.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="/blog/2016/03/27/utility-function.html" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/blog/2016/03/27/utility-function.html" class="leancloud_visitors" data-flag-title="博客添加实用功能">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数、添加sitemap百度收录等实用功能，让博客更加丰富、更加个性化。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2016/03/27/utility-function.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/2016/03/27/utility-function.html" rel="next" title="博客添加实用功能">
+                <i class="fa fa-chevron-left"></i> 博客添加实用功能
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/blog/2016/03/27/hexo-github-blog.html" itemprop="url">
-                  Hexo + github 搭建属于自己的博客
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-27T19:28:23+08:00" content="2016-03-27">
-              2016-03-27
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/博客/" itemprop="url" rel="index">
-                    <span itemprop="name">博客</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/blog/2016/03/27/hexo-github-blog.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="/blog/2016/03/27/hexo-github-blog.html" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/blog/2016/03/27/hexo-github-blog.html" class="leancloud_visitors" data-flag-title="Hexo + github 搭建属于自己的博客">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>一直想维护一个博客，纪录下些什么，主要是做笔记吧。今天找了些时间搭了起来。总体还是很顺利的。纪录下来。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2016/03/27/hexo-github-blog.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="/blog/2016/03/28/qiniu-storage.html"
+           data-title="博客添加七牛图片云存储" data-url="http://www.wjchan.com/blog/2016/03/28/qiniu-storage.html">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -650,8 +456,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -728,6 +543,23 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#注册七牛"><span class="nav-number">1.</span> <span class="nav-text">注册七牛</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#上传图片"><span class="nav-number">2.</span> <span class="nav-text">上传图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取图片"><span class="nav-number">3.</span> <span class="nav-text">获取图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#升级标准用户"><span class="nav-number">4.</span> <span class="nav-text">升级标准用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#上传优化"><span class="nav-number">5.</span> <span class="nav-text">上传优化</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
       
 
     </div>
@@ -812,6 +644,167 @@
   
 
   
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   
 
