@@ -52,9 +52,9 @@
     <link href="http://www.wjchan.com//blog/2016/03/27/utility-function.html"/>
     <id>http://www.wjchan.com//blog/2016/03/27/utility-function.html</id>
     <published>2016-03-27T14:55:58.000Z</published>
-    <updated>2016-03-28T14:16:33.000Z</updated>
+    <updated>2016-03-28T14:47:41.000Z</updated>
     
-    <content type="html">&lt;p&gt;给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数、添加sitemap百度收录等实用功能，让博客更加丰富、更加个性化。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数等实用功能，让博客更加丰富、更加个性化。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;多说评论&quot;&gt;&lt;a href=&quot;#多说评论&quot; class=&quot;headerlink&quot; title=&quot;多说评论&quot;&gt;&lt;/a&gt;多说评论&lt;/h2&gt;&lt;p&gt;登录&lt;a href=&quot;http://duoshuo.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;多说官网&lt;/a&gt;，登录后点我要安装，然后填写站点相关信息，最主要的是duoshuo_shortname这个字段，设置后之后修改themes\next\_config.yml文件，把duoshuo_shortname改成你的，如下所示：&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;duoshuo_shortname: wjchan&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;百度统计&quot;&gt;&lt;a href=&quot;#百度统计&quot; class=&quot;headerlink&quot; title=&quot;百度统计&quot;&gt;&lt;/a&gt;百度统计&lt;/h2&gt;&lt;p&gt;登录&lt;a href=&quot;http://sitecenter.baidu.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;百度统计&lt;/a&gt;，转到获取代码截面，找到百度统计脚本id，然后把themes\next\_config.yml文件下的baidu_analytics字段改成你的id，如下所示：&lt;/p&gt;
@@ -74,14 +74,11 @@
 &lt;li&gt;重新部署发布博客，记录文章访问量的唯一标识符是文章的发布日期以及文章的标题，因此请确保这两个数值组合的唯一性，如果更改了这两个数值，会造成文章阅读数值的清零重计&lt;/li&gt;
 &lt;li&gt;为了确保该应用只在自己的博客上使用，在安全中心中添加 web 安全域名，填入自己博客域名，这样就只有自己的博客可以访问后台数据了&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;sitemap&quot;&gt;&lt;a href=&quot;#sitemap&quot; class=&quot;headerlink&quot; title=&quot;sitemap&quot;&gt;&lt;/a&gt;sitemap&lt;/h2&gt;&lt;p&gt;安装 sitemap 插件，每次生成页面的时候就会在根目录生成了 sitemap.xml，发布后通过 域名/sitemap.xml 访问。没有 404 则成功。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install hexo-generator-sitemap@1 --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;生成了 sitemap ，不代表就能通过百度搜索到了，还要通过&lt;a href=&quot;http://zhanzhang.baidu.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;站长工具&lt;/a&gt;添加到百度。这一步需要验证，建议用 CNAME 的方式，不需要改代码。在万网添加一条解析就可以了。&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数、添加sitemap百度收录等实用功能，让博客更加丰富、更加个性化。&lt;br&gt;
+      &lt;p&gt;给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数等实用功能，让博客更加丰富、更加个性化。&lt;br&gt;
     
     </summary>
     

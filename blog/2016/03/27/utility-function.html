@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数、添加sitemap百度收录等实用功能，让博客更加丰富、更加个性化。">
+<meta name="description" content="给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数等实用功能，让博客更加丰富、更加个性化。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博客添加实用功能">
 <meta property="og:url" content="http://www.wjchan.com/blog/2016/03/27/utility-function.html">
 <meta property="og:site_name" content="wjchan">
-<meta property="og:description" content="给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数、添加sitemap百度收录等实用功能，让博客更加丰富、更加个性化。">
-<meta property="og:updated_time" content="2016-03-28T14:16:33.000Z">
+<meta property="og:description" content="给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数等实用功能，让博客更加丰富、更加个性化。">
+<meta property="og:updated_time" content="2016-03-28T14:47:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客添加实用功能">
-<meta name="twitter:description" content="给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数、添加sitemap百度收录等实用功能，让博客更加丰富、更加个性化。">
+<meta name="twitter:description" content="给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数等实用功能，让博客更加丰富、更加个性化。">
 
 
 
@@ -336,7 +336,7 @@
       
 
       
-        <p>给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数、添加sitemap百度收录等实用功能，让博客更加丰富、更加个性化。<br><a id="more"></a></p>
+        <p>给 hexo 博客添加多说评论、百度统计、站内搜索、文章阅读数等实用功能，让博客更加丰富、更加个性化。<br><a id="more"></a></p>
 <h2 id="多说评论"><a href="#多说评论" class="headerlink" title="多说评论"></a>多说评论</h2><p>登录<a href="http://duoshuo.com" target="_blank" rel="external">多说官网</a>，登录后点我要安装，然后填写站点相关信息，最主要的是duoshuo_shortname这个字段，设置后之后修改themes\next\_config.yml文件，把duoshuo_shortname改成你的，如下所示：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">duoshuo_shortname: wjchan</span><br></pre></td></tr></table></figure>
 <h2 id="百度统计"><a href="#百度统计" class="headerlink" title="百度统计"></a>百度统计</h2><p>登录<a href="http://sitecenter.baidu.com" target="_blank" rel="external">百度统计</a>，转到获取代码截面，找到百度统计脚本id，然后把themes\next\_config.yml文件下的baidu_analytics字段改成你的id，如下所示：</p>
@@ -356,9 +356,6 @@
 <li>重新部署发布博客，记录文章访问量的唯一标识符是文章的发布日期以及文章的标题，因此请确保这两个数值组合的唯一性，如果更改了这两个数值，会造成文章阅读数值的清零重计</li>
 <li>为了确保该应用只在自己的博客上使用，在安全中心中添加 web 安全域名，填入自己博客域名，这样就只有自己的博客可以访问后台数据了</li>
 </ol>
-<h2 id="sitemap"><a href="#sitemap" class="headerlink" title="sitemap"></a>sitemap</h2><p>安装 sitemap 插件，每次生成页面的时候就会在根目录生成了 sitemap.xml，发布后通过 域名/sitemap.xml 访问。没有 404 则成功。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-sitemap@1 --save</span><br></pre></td></tr></table></figure>
-<p>生成了 sitemap ，不代表就能通过百度搜索到了，还要通过<a href="http://zhanzhang.baidu.com" target="_blank" rel="external">站长工具</a>添加到百度。这一步需要验证，建议用 CNAME 的方式，不需要改代码。在万网添加一条解析就可以了。</p>
 
       
     </div>
@@ -583,7 +580,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#多说评论"><span class="nav-number">1.</span> <span class="nav-text">多说评论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#百度统计"><span class="nav-number">2.</span> <span class="nav-text">百度统计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#站内搜索"><span class="nav-number">3.</span> <span class="nav-text">站内搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加阅读数"><span class="nav-number">4.</span> <span class="nav-text">添加阅读数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sitemap"><span class="nav-number">5.</span> <span class="nav-text">sitemap</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#多说评论"><span class="nav-number">1.</span> <span class="nav-text">多说评论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#百度统计"><span class="nav-number">2.</span> <span class="nav-text">百度统计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#站内搜索"><span class="nav-number">3.</span> <span class="nav-text">站内搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加阅读数"><span class="nav-number">4.</span> <span class="nav-text">添加阅读数</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
@@ -623,8 +620,13 @@
   </a>
 </div>
 
-<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-您是第<span id="busuanzi_value_site_uv"></span>个小伙伴<span id="busuanzi_value_page_pv"></span>
+<div>
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+</div>
+
+<div>
+  您是第<span id="busuanzi_value_site_uv"></span>个小伙伴
+</div>
 
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
